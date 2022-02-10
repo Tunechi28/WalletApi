@@ -12,14 +12,14 @@ The Wallet App allows users to load their wallet from their Debit cards and tran
 
 # Getting Started
 
-To obtain a copy of this app download or clone the repository at this [url](https://github.com/tunechi28)
+To obtain a copy of this app download or clone the repository at this [url](https://github.com/Tunechi28/WalletApi)
 
 # Prerequisites
 
 You must have
 
 - NodeJs Installed
-- A browser Installed
+- Mysql installed or If you have docker installed, run `Make docker`
 - A RESTAPI client(like POSTMAN or Insomnia) Installed
 - An Internet connection to download the dependencies.
 
@@ -27,7 +27,7 @@ You must have
 
 - (If the repository wasnt cloned)Extract the contents of the downloaded zip file into any suitable location on the computer
 - In the command prompt, cd to the root of the directory you extracted the app into
-- Run 'npm install' to install all dependencies
+- Run `make install` to install all dependencies
 - Run 'npm run dev' to start the application
 - In a browser address bar navigate to 'http://localhost:5000', you will see a welcome message.
 
@@ -41,9 +41,6 @@ You must have
 - Use the POST method
 - Use this url http://localhost:5000/api/signin
 
-```
-
-```
 
 ### Signup
 
@@ -75,7 +72,7 @@ You must have
 
 ### User profile
 
-- Use the POST method
+- Use the PUt method
 - Use this url http://localhost:5000/api/profile
 - user can upload image that will reside on his dashboard
 - user can also have a username
@@ -86,7 +83,7 @@ You must have
 - Express
 - MySQL (database)
 - Sequelize (ORM)
-- AWS (image upload)
+- AWS (image upload to S3)
 
 ## Author
 
