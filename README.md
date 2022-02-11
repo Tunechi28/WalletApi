@@ -85,6 +85,10 @@ You must have
 - Sequelize (ORM)
 - AWS (image upload to S3)
 
+## Documentation
+
+- See link to the postman documnentation [url](https://documenter.getpostman.com/view/11574904/UVeMH3aL)
+
 ## Author
 
 - Henry Agbasi

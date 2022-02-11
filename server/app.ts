@@ -33,8 +33,8 @@ require('dotenv').config();
 
 app.post('/api/signup', signUp);
 app.post('/api/signin', signIn);
-app.post('/forgetPassword', forgetPassword);
-app.post('/resetpasstoken/:id-:token', resetPassword);
+app.post('/api/forgetpassword', forgetPassword);
+app.post('/api/resetpasstoken/:id-:token', resetPassword);
 
 app.use('/api', accountRoute);
 app.use('/api', getUsersRoute);
