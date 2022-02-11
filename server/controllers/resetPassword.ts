@@ -5,8 +5,7 @@ import model from '../models';
 
 const resetPassword = async (req, res) => {
   try {
-    const id = req.query.id;
-    const token = req.headers["x-auth-token"]
+    const { id, token } = req.params;
     console.log('id', id);
     const { password } = req.body;
     const result: UserEntity = await model.Users.findOne({

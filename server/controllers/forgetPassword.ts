@@ -21,7 +21,7 @@ const forgetPassword = async (req, res) => {
       const token = jwt.sign({ result }, secret, {
         expiresIn: 3600, // 1 hour
       });
-      const url = `http://localhost:8080/resetPassword/${result.id}-${token}`;
+      const url = `${process.env.HOST}/resetPassword/${result.id}-${token}`;
       const mailOptions = {
         from: 'tochihenry28@gmail.com',
         to: email,

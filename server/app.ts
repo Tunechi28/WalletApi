@@ -43,7 +43,7 @@ app.use('/api', profileRoute);
 app.use('/api', giftRoute);
 
 //Welcome Message
-routes.route('/').get((req, res) => {
+app.get('/',(req, res) => {
   res.status(200).json({ message: 'Welcome to Verileum' })
 })
 

@@ -26,8 +26,9 @@ export default {
       const { balance } = accountDetails.dataValues;
 
       const amt: number = parseFloat(balance);
-      console.log('amount', amt);
+      
       const { amount, description } = req.body;
+      console.log('amount', amt);
       if (amt < amount) {
         return res.status(403).json({
           messege: 'ooppss! Oga your balance is low',
